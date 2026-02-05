@@ -1,0 +1,96 @@
+# Reading pref.tcl
+# do sync_fifo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/FIFO {E:/FIFO/sync_fifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:04:16 on Jan 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FIFO" E:/FIFO/sync_fifo.v 
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	sync_fifo
+# End time: 22:04:16 on Jan 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/FIFO {E:/FIFO/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:04:16 on Jan 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FIFO" E:/FIFO/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 22:04:16 on Jan 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 22:04:16 on Jan 16,2026
+# Loading work.tb
+# Loading work.sync_fifo
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# RESET released
+# [25000] WRITE data=0x24 full=0
+# [35000] WRITE data=0x81 full=0
+# [45000] WRITE data=0x9 full=0
+# [55000] WRITE data=0x63 full=0
+# [65000] WRITE data=0xd full=0
+# [75000] WRITE data=0x8d full=0
+# [85000] WRITE data=0x65 full=0
+# [95000] WRITE data=0x12 full=0
+# [105000] WRITE WHEN FULL full=1
+# [115000] READ data=0x0 empty=0
+# [125000] READ data=0x0 empty=0
+# [135000] READ data=0x24 empty=0
+# [145000] READ data=0x81 empty=0
+# [155000] READ data=0x9 empty=0
+# [165000] READ data=0x63 empty=0
+# [175000] READ data=0xd empty=0
+# [185000] READ data=0x8d empty=0
+# [195000] READ WHEN EMPTY empty=1
+# [205000] SIMUL R/W data_in=0x1 data_out=0x65
+# [215000] SIMUL R/W data_in=0xd data_out=0x65
+# [225000] SIMUL R/W data_in=0x76 data_out=0x65
+# [235000] SIMUL R/W data_in=0x3d data_out=0x1
+# [245000] SIMUL R/W data_in=0xed data_out=0xd
+# [255000] RANDOM w_en=0 r_en=1 full=0 empty=0 data_out=0x76
+# [265000] RANDOM w_en=1 r_en=0 full=0 empty=0 data_out=0x3d
+# [275000] RANDOM w_en=1 r_en=0 full=0 empty=1 data_out=0xed
+# [285000] RANDOM w_en=0 r_en=0 full=0 empty=0 data_out=0xed
+# [295000] RANDOM w_en=1 r_en=0 full=0 empty=0 data_out=0xed
+# [305000] RANDOM w_en=1 r_en=1 full=0 empty=0 data_out=0xed
+# [315000] RANDOM w_en=0 r_en=0 full=0 empty=0 data_out=0xed
+# [325000] RANDOM w_en=0 r_en=1 full=0 empty=0 data_out=0xe5
+# [335000] RANDOM w_en=1 r_en=1 full=0 empty=0 data_out=0xe5
+# [345000] RANDOM w_en=1 r_en=1 full=0 empty=0 data_out=0x8f
+# [355000] RANDOM w_en=0 r_en=1 full=0 empty=0 data_out=0xbd
+# [365000] RANDOM w_en=1 r_en=0 full=0 empty=0 data_out=0x63
+# [375000] RANDOM w_en=0 r_en=0 full=0 empty=0 data_out=0x53
+# [385000] RANDOM w_en=1 r_en=0 full=0 empty=0 data_out=0x53
+# [395000] RANDOM w_en=1 r_en=1 full=0 empty=0 data_out=0x53
+# [405000] RANDOM w_en=0 r_en=0 full=0 empty=0 data_out=0x53
+# [415000] RANDOM w_en=0 r_en=1 full=0 empty=0 data_out=0x2
+# [425000] RANDOM w_en=1 r_en=1 full=0 empty=0 data_out=0x2
+# [435000] RANDOM w_en=0 r_en=0 full=0 empty=0 data_out=0xca
+# [445000] RANDOM w_en=1 r_en=1 full=0 empty=0 data_out=0x78
+# ** Note: $finish    : E:/FIFO/tb.v(78)
+#    Time: 495 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at E:/FIFO/tb.v line 78
+# End time: 22:10:50 on Jan 16,2026, Elapsed time: 0:06:34
+# Errors: 0, Warnings: 0

@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FIFO/simulation/modelsim
+vsync_fifo
+Z1 !s110 1768581256
+!i10b 1
+!s100 A@JCKA5D6DB<Vnn56e=MI1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IF^b5EM0f4:1X^LgTR<NG90
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1768581217
+8E:/FIFO/sync_fifo.v
+FE:/FIFO/sync_fifo.v
+!i122 0
+L0 1 36
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1768581256.000000
+!s107 E:/FIFO/sync_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FIFO|E:/FIFO/sync_fifo.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+E:/FIFO
+Z8 tCvgOpt 0
+vtb
+R1
+!i10b 1
+!s100 6;JfeKKHJJX;K@B69f_Kz0
+R2
+IHYeB_MFj8;bnk:H@Z6I[Q3
+R3
+R0
+w1768581207
+8E:/FIFO/tb.v
+FE:/FIFO/tb.v
+!i122 1
+L0 3 79
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/FIFO/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FIFO|E:/FIFO/tb.v|
+!i113 1
+R6
+R7
+R8
